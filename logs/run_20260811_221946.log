@@ -1,0 +1,52 @@
+2026-08-11 22:19:47,852 | WARNING | langchain_community.utils.user_agent | USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-08-11 22:19:48,307 | INFO | __main__ | Loading the assistant...
+2026-08-11 22:19:48,308 | INFO | assistant.pipeline | Building assistant...
+2026-08-11 22:19:48,309 | INFO | assistant.pipeline | Building vector store...
+2026-08-11 22:19:48,309 | INFO | assistant.vector_store | Checking if vector store exists at C:\Users\KAMINI TYAGI\OneDrive\Documents\Desktop\rag2\rag2env\faiss_index
+2026-08-11 22:19:48,309 | INFO | assistant.pipeline | Loading existing vector store...
+2026-08-11 22:19:48,310 | INFO | assistant.embeddings | Initializing Jina embeddings... jina-embeddings-v3
+2026-08-11 22:19:48,314 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-08-11 22:19:48,316 | INFO | faiss.loader | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-08-11 22:19:48,316 | INFO | faiss.loader | Loading faiss.
+2026-08-11 22:19:48,390 | INFO | faiss.loader | Successfully loaded faiss.
+2026-08-11 22:19:48,405 | INFO | assistant.vector_store | Vector store loaded successfully.
+2026-08-11 22:19:48,405 | INFO | assistant.pipeline | Vector store loaded successfully.
+2026-08-11 22:19:48,405 | INFO | assistant.vector_store | Retriever created successfully.
+2026-08-11 22:19:48,409 | INFO | assistant.llm | loading the model openai/gpt-oss-120b
+2026-08-11 22:19:49,656 | INFO | assistant.agent | Langchain agent created successfully!
+2026-08-11 22:19:49,656 | INFO | assistant.pipeline | Assistant built successfully.
+2026-08-11 22:19:49,657 | INFO | __main__ | Assistant loaded successfully!
+2026-08-11 22:19:56,395 | INFO | __main__ | === Streamlit run: new question received ===
+2026-08-11 22:19:56,397 | INFO | assistant.pipeline | Asking question: hi
+2026-08-11 22:19:57,534 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-11 22:19:57,554 | INFO | assistant.pipeline | Received answer: Hello! How can I help you today?
+2026-08-11 22:19:58,522 | WARNING | langsmith.client | Failed to multipart ingest runs: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-11 22:20:05,678 | INFO | __main__ | === Streamlit run: new question received ===
+2026-08-11 22:20:05,679 | INFO | assistant.pipeline | Asking question: hw r u
+2026-08-11 22:20:06,200 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-11 22:20:06,203 | INFO | assistant.pipeline | Received answer: I'm doing well, thank you! How can I help you today?
+2026-08-11 22:20:07,011 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-11 22:22:24,823 | INFO | __main__ | === Streamlit run: new question received ===
+2026-08-11 22:22:24,830 | INFO | assistant.pipeline | Asking question: can you tell me that in spider-man 1 was webs original
+2026-08-11 22:22:25,821 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-11 22:22:26,377 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-11 22:22:26,468 | INFO | assistant.pipeline | Received answer: In Sam Raimi’s 2002 *Spider‑Man* (the first movie in that trilogy), Peter Parker **does not** have any kind of “organic” web‑shooting ability. Instead, after being bitten by the genetically‑engineered spider, he uses his scientific talent to **invent his own web‑shooters and a synthetic web‑fluid**. He spends weeks in his bedroom (and later his lab) experimenting with various chemical mixtures until he finally creates a formula that can be expelled under pressure and solidify into strong, sticky strands—essentially a man‑made version of spider silk.
+
+So, in the film, the webs are **original** in the sense that they’re a **technology Peter designs himself**, not a natural super‑power. This differs from later comic‑book depictions (and some later movies) where Spider‑Man’s webs are produced biologically from his own body.
+2026-08-11 22:22:27,528 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-11 22:22:50,958 | INFO | __main__ | === Streamlit run: new question received ===
+2026-08-11 22:22:50,960 | INFO | assistant.pipeline | Asking question: tobey
+2026-08-11 22:22:51,697 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-11 22:22:51,743 | INFO | assistant.tool | searching for relevent documents with Tobey
+2026-08-11 22:22:51,859 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-11 22:22:52,751 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-11 22:22:53,818 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-11 22:22:53,834 | INFO | assistant.tool | searching for relevent documents with Tobey
+2026-08-11 22:22:54,176 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-11 22:22:54,858 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-11 22:22:54,866 | INFO | assistant.tool | searching for relevent documents with Tobey
+2026-08-11 22:22:56,155 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-11 22:22:56,166 | INFO | assistant.pipeline | Received answer: I’m not sure what you’re referring to with “tobey.” Could you give me a bit more context or let me know what you’d like to know?
+2026-08-11 22:22:56,302 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-11 22:22:57,152 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
