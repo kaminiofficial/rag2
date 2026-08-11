@@ -4,6 +4,11 @@ import os
 load_dotenv(dotenv_path="C:\\Users\\KAMINI TYAGI\\OneDrive\\Documents\\Desktop\\rag2\\rag2env\\.env")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 JINA_API_KEY = os.getenv("JINA_API_KEY")
+LANGSMITH_TRACING = os.getenv("LANGSMITH_TRACING")
+LANGSMITH_ENDPOINT = os.getenv("LANGSMITH_ENDPOINT")
+LANGSMITH_API_KEY = os.getenv("LANGSMITH_API_KEY")
+LANGSMITH_PROJECT = os.getenv("LANGSMITH_PROJECT")
+
 
 MODEL_NAME = "openai/gpt-oss-120b"
 EMBEDDING_MODEL_NAME = "jina-embeddings-v3"
