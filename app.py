@@ -4,7 +4,7 @@ from assistant.logger import get_logger
 
 logger = get_logger(__name__)
 
-st.title("RAG Assistant")
+st.title("Langchain Assistant")
 st.write("Ask questions about the loaded data.")
 
 @st.cache_resource(show_spinner='Loading the assistant...')
