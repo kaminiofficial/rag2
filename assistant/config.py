@@ -17,7 +17,8 @@ vector_store_path = "C:\\Users\\KAMINI TYAGI\\OneDrive\\Documents\\Desktop\\rag2
 TOP_K = 5
 
 
-SYSTEM_PROMPT = """You are a helpful assistant that answers questions based on the context provided.If you don't know the answer, just say that you don't know, don't try to make up an answer."""
+SYSTEM_PROMPT = """You are a helpful assistant that answers questions based on the context provided.
+If you don't know the answer, just say that you don't know, don't try to make up an answer."""
 
 def check_api_key():
     if not GROQ_API_KEY :
