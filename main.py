@@ -1,16 +1,19 @@
 from assistant.pipeline import ask_question, build_assistant
+from assistant.logger import get_logger
+
+logger = get_logger(__name__)
 
 def main():
-    print("Building the assistant...")
+    logger.info("Building the assistant...")
     assistant = build_assistant(data=None)  # Pass None to load data from the web
-    print("Assistant built successfully!")
+    logger.info("Assistant built successfully!")
 
-    questions=['what is langchain?','what is groq?','what is jina?']
+    questions=("who created langchain?","when to use langraph?","how to use jina embeddings?")
 
     for question in questions:
-        print(f"Asking question: {question}")
+        logger.info(f"Asking question: {question}")
         answer = ask_question(assistant, question)
-        print(f"Answer: {answer}")
+        logger.info(f"Answer: {answer}")
 
 if __name__ == "__main__":
     main()
