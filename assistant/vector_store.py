@@ -2,7 +2,7 @@ import os
 from langchain_community.vectorstores import FAISS
 from assistant import config
 from assistant.embeddings import get_embeddings
-from assistant.loggerlogger import get_logger
+from assistant.logger import get_logger
 
 logger = get_logger(__name__)
 
