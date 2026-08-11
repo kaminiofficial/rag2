@@ -6,7 +6,7 @@ logger=get_logger(__name__)
 
 def get_llm():
 
-    logger.info(f"loading the model {config.MOAEL_NAME}")
+    logger.info(f"loading the model {config.MODEL_NAME}")
     model = ChatGroq(
         model_name=config.MODEL_NAME,
         api_key=config.GROQ_API_KEY,

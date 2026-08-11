@@ -1,0 +1,15 @@
+2026-08-11 15:18:34,048 | WARNING | langchain_community.utils.user_agent | USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-08-11 15:18:36,028 | INFO | __main__ | Loading the assistant...
+2026-08-11 15:18:36,029 | INFO | assistant.pipeline | Building assistant...
+2026-08-11 15:18:36,030 | INFO | assistant.pipeline | Building vector store...
+2026-08-11 15:18:36,031 | INFO | assistant.vector_store | Checking if vector store exists at C:\Users\KAMINI TYAGI\OneDrive\Documents\Desktop\rag2\rag2env\faiss_index
+2026-08-11 15:18:36,032 | INFO | assistant.pipeline | Loading existing vector store...
+2026-08-11 15:18:36,034 | INFO | assistant.embeddings | Initializing Jina embeddings... jina-embeddings-v3
+2026-08-11 15:18:36,062 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-08-11 15:18:36,067 | INFO | faiss.loader | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-08-11 15:18:36,073 | INFO | faiss.loader | Loading faiss.
+2026-08-11 15:18:37,095 | INFO | faiss.loader | Successfully loaded faiss.
+2026-08-11 15:18:37,324 | INFO | assistant.vector_store | Vector store loaded successfully.
+2026-08-11 15:18:37,327 | INFO | assistant.pipeline | Vector store loaded successfully.
+2026-08-11 15:18:37,329 | INFO | assistant.vector_store | Retriever created successfully.
