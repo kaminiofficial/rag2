@@ -1,7 +1,7 @@
 from assistant import config
 from assistant.llm import get_llm
 from assistant.vector_store import load_vector_store, get_retriever, vector_store_exists, create_vector_store, save_vector_store
-
+from assistant.tracing import check_tracing
 
 from assistant.tool import create_tool
 from assistant.agent import langchain_agent

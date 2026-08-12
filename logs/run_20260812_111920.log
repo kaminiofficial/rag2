@@ -70,3 +70,39 @@ Traceback (most recent call last):
     self._sock.shutdown(socket.SHUT_RDWR)
     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
 ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+2026-08-12 12:39:05,477 | INFO | __main__ | === Streamlit run: new question received ===
+2026-08-12 12:39:05,482 | INFO | assistant.pipeline | Asking question: what is ai agents
+2026-08-12 12:39:06,923 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-12 12:39:07,368 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-12 12:39:07,386 | INFO | assistant.pipeline | Received answer: AI agents are software systems that can perceive their environment, make decisions, and take actions autonomously—often using artificial‑intelligence techniques such as machine learning, natural‑language processing, or reinforcement learning. 
+
+Typical characteristics of AI agents include:
+
+| Characteristic | What it means |
+|----------------|----------------|
+| **Perception** | The agent gathers information from its surroundings (e.g., sensor data, user input, web content). |
+| **Reasoning / Decision‑making** | It processes the information, often with models like neural networks or rule‑based systems, to decide what to do next. |
+| **Action** | The agent performs an operation—sending a message, controlling a device, retrieving data, etc. |
+| **Goal‑oriented** | It works toward one or more objectives (e.g., answering a question, optimizing a schedule, playing a game). |
+| **Learning (optional)** | Some agents improve over time by updating their models from experience. |
+
+### Types of AI agents
+
+| Type | Typical Use‑case |
+|------|------------------|
+| **Chatbot / Conversational agent** | Customer support, virtual assistants (e.g., ChatGPT, Siri). |
+| **Autonomous robot** | Physical tasks like warehouse picking, self‑driving cars. |
+| **Software‑automation agent** | Scheduling, data extraction, monitoring systems. |
+| **Reinforcement‑learning agent** | Game playing (AlphaGo), resource allocation, recommendation systems. |
+| **Multi‑agent system** | Multiple agents cooperate or compete (e.g., swarm robotics, market simulations). |
+
+### How they work (high‑level)
+
+1. **Sense** – Collect data from the environment (text, images, sensor readings, etc.).
+2. **Interpret** – Use AI models (e.g., language models, computer‑vision networks) to understand the data.
+3. **Plan** – Determine the best next step based on goals and constraints.
+4. **Act** – Execute the chosen action (send a reply, move a robot arm, trigger an API call).
+5. **Learn (optional)** – Update internal models from feedback to improve future performance.
+
+In short, an AI agent is any intelligent software that can autonomously perceive, reason, and act to achieve a goal, often leveraging modern AI techniques to handle complex, unstructured inputs.
+2026-08-12 12:39:08,238 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
