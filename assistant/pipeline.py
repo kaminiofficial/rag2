@@ -9,6 +9,7 @@ from assistant.splitter import split_text
 from assistant.embeddings import get_embeddings
 from assistant.loader import load_data
 from assistant.logger import get_logger
+from assistant.tracing import check_tracing
 
 logger = get_logger(__name__)
 
@@ -33,7 +34,7 @@ def build_assistant(data):
     logger.info("Building assistant...")
 
     config.check_api_key()
-    config.check_tracing()
+    check_tracing()
     vector_store = build_vector_store(data)
     retriever = get_retriever(vector_store)
     tool = create_tool(retriever)
