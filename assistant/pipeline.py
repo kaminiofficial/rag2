@@ -31,6 +31,9 @@ def build_vector_store(data):
 
 def build_assistant(data):
     logger.info("Building assistant...")
+
+    config.check_api_key()
+    config.check_tracing()
     vector_store = build_vector_store(data)
     retriever = get_retriever(vector_store)
     tool = create_tool(retriever)

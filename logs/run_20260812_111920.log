@@ -1,0 +1,72 @@
+2026-08-12 11:19:27,960 | WARNING | langchain_community.utils.user_agent | USER_AGENT environment variable not set, consider setting it to identify your requests.
+2026-08-12 11:19:30,434 | INFO | __main__ | Loading the assistant...
+2026-08-12 11:19:30,435 | INFO | assistant.pipeline | Building assistant...
+2026-08-12 11:19:30,435 | INFO | assistant.pipeline | Building vector store...
+2026-08-12 11:19:30,436 | INFO | assistant.vector_store | Checking if vector store exists at C:\Users\KAMINI TYAGI\OneDrive\Documents\Desktop\rag2\rag2env\faiss_index
+2026-08-12 11:19:30,438 | INFO | assistant.pipeline | Loading existing vector store...
+2026-08-12 11:19:30,439 | INFO | assistant.embeddings | Initializing Jina embeddings... jina-embeddings-v3
+2026-08-12 11:19:30,450 | INFO | faiss.loader | Loading faiss with AVX2 support.
+2026-08-12 11:19:30,457 | INFO | faiss.loader | Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2026-08-12 11:19:30,459 | INFO | faiss.loader | Loading faiss.
+2026-08-12 11:19:31,160 | INFO | faiss.loader | Successfully loaded faiss.
+2026-08-12 11:19:31,270 | INFO | assistant.vector_store | Vector store loaded successfully.
+2026-08-12 11:19:31,271 | INFO | assistant.pipeline | Vector store loaded successfully.
+2026-08-12 11:19:31,277 | INFO | assistant.vector_store | Retriever created successfully.
+2026-08-12 11:19:31,291 | INFO | assistant.llm | loading the model openai/gpt-oss-120b
+2026-08-12 11:19:37,708 | INFO | assistant.agent | Langchain agent created successfully!
+2026-08-12 11:19:37,708 | INFO | assistant.pipeline | Assistant built successfully.
+2026-08-12 11:19:37,709 | INFO | __main__ | Assistant loaded successfully!
+2026-08-12 11:20:09,723 | INFO | __main__ | === Streamlit run: new question received ===
+2026-08-12 11:20:09,732 | INFO | assistant.pipeline | Asking question: hi 
+2026-08-12 11:20:10,831 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-12 11:20:10,885 | INFO | assistant.pipeline | Received answer: Hello! How can I help you today?
+2026-08-12 11:20:12,343 | WARNING | langsmith.client | Failed to multipart ingest runs: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-12 11:20:21,714 | INFO | __main__ | === Streamlit run: new question received ===
+2026-08-12 11:20:21,726 | INFO | assistant.pipeline | Asking question: what is langvhain
+2026-08-12 11:20:22,436 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-12 11:20:22,457 | INFO | assistant.tool | searching for relevent documents with LangChain
+2026-08-12 11:20:22,633 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-12 11:20:23,445 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-12 11:20:26,305 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-12 11:20:26,954 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-12 11:20:26,963 | INFO | assistant.pipeline | Received answer: **LangChain** is an open‑source framework that makes it easier to build applications powered by large language models (LLMs).  
+
+### What it does
+- **Standardizes model access** – provides a single, consistent interface for chat models, embeddings, and other LLM services across many providers (OpenAI, Anthropic, Cohere, etc.).
+- **Chains** – lets you link together multiple LLM calls, prompts, and other processing steps (e.g., retrieval, parsing) into reusable pipelines.
+- **Agents** – higher‑level components that can decide which tools or actions to take, invoke external APIs, and iteratively reason to solve tasks.
+- **Tools & Integrations** – includes built‑in support for common utilities such as web search, database queries, code execution, and more; you can also create custom tools.
+- **LangGraph integration** – LangChain’s agents are built on top of LangGraph, giving them durable execution, persistence, human‑in‑the‑loop support, and state‑tracking capabilities.
+- **Observability with LangSmith** – offers tracing, debugging, and evaluation of LLM calls, tool usage, and agent state transitions, helping you find failure modes and improve performance.
+
+### Why use it?
+- **Portability** – swap out models or providers with minimal code changes.
+- **Modularity** – pick only the pieces you need (prompts, memory, retrieval, routing, guardrails, retries, etc.).
+- **Scalability** – supports both simple scripts and complex, production‑grade pipelines.
+- **Community & Ecosystem** – extensive documentation, tutorials, a growing library of pre‑built components, and active community support.
+
+In short, LangChain provides the building blocks and orchestration layer to turn raw LLM capabilities into robust, maintainable applications such as chatbots, question‑answering systems, data‑augmented agents, and more.
+2026-08-12 11:20:27,879 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-12 11:24:24,075 | INFO | __main__ | === Streamlit run: new question received ===
+2026-08-12 11:24:24,083 | INFO | assistant.pipeline | Asking question: what is capital of india
+2026-08-12 11:24:25,312 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-12 11:24:25,512 | INFO | assistant.pipeline | Received answer: The capital of India is New Delhi.
+2026-08-12 11:24:26,493 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-12 11:24:27,418 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-12 11:24:57,962 | INFO | __main__ | === Streamlit run: new question received ===
+2026-08-12 11:24:57,965 | INFO | assistant.pipeline | Asking question: what is capital of india?
+2026-08-12 11:24:58,518 | INFO | httpx | HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-08-12 11:24:58,526 | INFO | assistant.pipeline | Received answer: The capital of India is New Delhi.
+2026-08-12 11:24:58,789 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-12 11:24:59,591 | WARNING | langsmith.client | Failed to send compressed multipart ingest: langsmith.utils.LangSmithError: Failed to POST https://api.smith.langchain.com/runs/multipart in LangSmith API. HTTPError('403 Client Error: Forbidden for url: https://api.smith.langchain.com/runs/multipart', '{"error":"Forbidden"}\n')
+2026-08-12 12:11:44,843 | ERROR | asyncio | Exception in callback _ProactorBasePipeTransport._call_connection_lost()
+handle: <Handle _ProactorBasePipeTransport._call_connection_lost()>
+Traceback (most recent call last):
+  File "C:\Users\KAMINI TYAGI\AppData\Local\Programs\Python\Python314\Lib\asyncio\events.py", line 94, in _run
+    self._context.run(self._callback, *self._args)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\KAMINI TYAGI\AppData\Local\Programs\Python\Python314\Lib\asyncio\proactor_events.py", line 165, in _call_connection_lost
+    self._sock.shutdown(socket.SHUT_RDWR)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
